@@ -1,19 +1,11 @@
-<html>
-<form action="function2.php" method='post'>
-    <input type='text' name='myname'>
-    <input type='submit' value='enter'>
-
-</form>
-</html>
-
 <?php
 
-$name = $_post['myname'];
-
-if($name)
-    echo "My name is $name Sharma";
-
-
+function writeName2($firstname)
+{
+    echo $firstname." Sharma";
+}
+echo "My name is ",writeName2("Jai"); 
+echo "<br>";
+echo "My brother's name is ",writeName2("Ram");
 
 ?>
-
